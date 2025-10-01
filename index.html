@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Chhalma Chhaya - AI/ML Engineer & Software Developer</title>
+    
+</head>
+<body>
+    <nav id="navbar">
+  <div class="container">
+    <div class="nav-container">
+    <a href="index.html" class="logo">
+        <div class="logo">
+        <img src="images/logo.png" alt="Chhalma Chhaya Logo">
+        <p>Chhalma<br>Chhaya</p>
+      </div>
+
+    </a>
+
+      
+      <!-- Hamburger button -->
+      <button class="menu-toggle" id="menu-toggle">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a onclick="scrollToSection('hero')">Home</a></li>
+        <li><a onclick="scrollToSection('education')">Education & Certifications</a></li>
+        <li><a onclick="scrollToSection('job')">Job</a></li>
+        <li><a onclick="scrollToSection('projects')">Projects</a></li>
+        <li><a onclick="scrollToSection('youtube')">Resources & Ideas</a></li>
+        <li><a onclick="scrollToSection('github')">GitHub</a></li>
+        <li><a onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+   <section id="hero" class="hero">
+    <div class="floating-shapes"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1>Hi, I'm Chhalma</h1>
+            <p>AI/ML & Software Engineer</p>
+            <p class="hero-description">
+                MSc Software Engineering graduate specializing in AI, ML & Cloud Systems. 
+                Achieved 4× inference speedup at AI-Aware Ltd through model optimization 
+                with PyTorch, ONNX, and TensorRT. Expertise in Python, Java, AWS/GCP, 
+                and full-stack development.
+                <br><br>
+                    During my internship, I engineered and optimized multi-batch AI pipelines, 
+                    combining academic rigor with practical experience in building scalable, 
+                    intelligent systems. Actively seeking opportunities in AI/ML Engineering 
+                    and Software Development.
+                
+            </p>
+            <div class="hero-cta-container">
+                <a class="cta-button primary" onclick="scrollToSection('projects')">View My Work</a>
+                <a class="cta-button secondary" href="Chhalma_CV.docx" download>Download CV</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Interactive Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">AI Model Optimization Pipeline</div>
+                    <div class="project-description">Multi-stage benchmarking pipeline for Desklib model across PyTorch, ONNX, and TensorRT - achieving 4× FP16 speedup</div>
+                    <div class="project-demo">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-title">Knowledge Graph Generator</div>
+                    <div class="project-description">Software component converting tabular data to knowledge graphs using OWL2Vec and SPARQL with ontology alignment</div>
+                    <div class="project-demo">
+                        <div id="threejsDemo"></div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-title">Optimized Spark Pipeline</div>
+                    <div class="project-description">Boosted Spark cluster performance by 34% using dynamic partitioning and RDD caching for image processing</div>
+                    <div class="project-demo">
+                        <div id="d3Demo"></div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Activity Timeline</div>
+                    <div class="project-description">Interactive timeline chart showing development activity over time</div>
+                    <div class="project-demo">
+                        <canvas id="activityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="youtube" class="section">
+        <div class="container">
+            <h2 class="section-title">Resources & Ideas</h2>
+            <div class="youtube-grid">
+            <div class="youtube-card">
+            <div class="youtube-title">PyTorch to ONNX Conversion</div>
+                <div class="youtube-description">A tutorial video on converting a PyTorch model to ONNX.</div>
+                <div class="youtube-demo">
+                    <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/m7utjixvgxc"
+                            title="PyTorch to ONNX Conversion" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="youtube-card">
+                <div class="youtube-title">Study plan for Graduates</div>
+                <div class="youtube-description">A Study Plan for recent Garduate Week 1</div>
+                <div class="youtube-demo">
+                    <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/0PMQsWC4REA"
+                            title="AI Models Tutorial" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Add more project-card divs for other videos -->
+        </div>
+        
+        </div>
+    </section>
+    
+
+    <section id="job" class="section">
+    <div class="container">
+        <h2 class="section-title">Experience & Volunteer Work</h2>
+        <div class="job-grid">
+
+            <!-- Job 1: AI-Aware Intern -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3 class="job-title">AI Research Intern – AI-Aware Ltd</h3>
+                    <span class="job-duration">Jul 2025 – Present</span>
+                </div>
+                <p class="job-description">
+                    Developed and optimized AI inference pipelines for NLP models using PyTorch, ONNX, INT8/INT4 quantization, and TensorRT.
+                </p>
+                <ul class="job-keypoints">
+                    <li>Achieved up to 4× FP16 inference speedup on CPU and GPU.</li>
+                    <li>Containerized pipelines using Docker for reproducible deployments.</li>
+                    <li>Performed multi-stage benchmarking and quantitative analysis of full-precision vs quantized models.</li>
+                </ul>
+            </div>
+
+            <!-- Job 2: Geta Apps Volunteer -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3 class="job-title">Volunteer Software Developer – Geta Apps</h3>
+                    <span class="job-duration">Nov 2024 – Feb 2025</span>
+                </div>
+                <p class="job-description">
+                    Built backend APIs and integrated AI features for an investor-founder matching platform.
+                </p>
+                <ul class="job-keypoints">
+                    <li>Developed NestJS APIs and SQLite database for platform functionality.</li>
+                    <li>Collaborated in Agile team using Slack for remote coordination.</li>
+                    <li>Integrated AI decision-making logic into matching algorithms.</li>
+                </ul>
+            </div>
+
+            <!-- Job 3: Smile for the Future Volunteer -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3 class="job-title">Volunteer Web Developer – Smile for the Future Charity</h3>
+                    <span class="job-duration">sep 2023 - Oct 2024</span>
+                </div>
+                <p class="job-description">
+                    Designed and developed the charity website using Django and WordPress.
+                </p>
+                <ul class="job-keypoints">
+                    <li>Implemented responsive front-end and CMS features for easy content management.</li>
+                    <li>Enabled online donations and volunteer management system.</li>
+                    <li>Showcased full-stack development skills and initiative for nonprofit work.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="edu-cert-grid">
+            
+            <!-- Education Cards -->
+            <div class="edu-card">
+                <div class="edu-logo">
+                    <img src="images/City_logo.png" alt="City University London">
+                </div>
+                <h3>MSc Software Engineering</h3>
+                <p class="university">City, University of London</p>
+                <p class="duration">Sep 2023 – Present</p>
+                <p class="details">Expected Distinction</p>
+            </div>
+            
+            <div class="edu-card">
+                <div class="edu-logo">
+                    <img src="images/dhaka_uni.jpg" alt="University of Dhaka">
+                </div>
+                <h3>MSc Information Technology</h3>
+                <p class="university">University of Dhaka</p>
+                <p class="duration">Jul 2009 – Dec 2010</p>
+                <p class="details">CGPA: 3.76/4.00 (UK Distinction Equivalent)</p>
+            </div>
+            
+            <div class="edu-card">
+                <div class="edu-logo">
+                    <img src="images/bup.png" alt="Bangladesh University of Professionals">
+                </div>
+                <h3>BSc Computer Science & Engineering</h3>
+                <p class="university">Bangladesh University of Professionals</p>
+                <p class="duration">Feb 2005 – Dec 2008</p>
+                <p class="details">CGPA: 3.35/4.00 (UK 2:1 Equivalent)</p>
+            </div>
+
+            <!-- Certification Cards -->
+            <div class="cert-card">
+                <div class="cert-logo">
+                    <img src="images/udacity.jpeg" alt="AWS">
+                </div>
+                <div class="cert-content">
+                    <div class="cert-name">AWS Machine Learning Engineer Nanodegree</div>
+                    <div class="cert-issuer">Udacity</div>
+                    <div class="cert-date">Sep 2025</div>
+                </div>
+            </div>
+            
+            <div class="cert-card">
+                <div class="cert-logo">
+                    <img src="images/udacity.jpeg" alt="Udacity">
+                </div>
+                <div class="cert-content">
+                    <div class="cert-name">Programming with Python Nanodegree</div>
+                    <div class="cert-issuer">Udacity</div>
+                    <div class="cert-date">Feb 2025</div>
+                </div>
+            </div>
+            
+            <div class="cert-card">
+                <div class="cert-logo">
+                    <img src="images/aws1.png" alt="AWS Academy">
+                </div>
+                <div class="cert-content">
+                    <div class="cert-name">AWS Academy Graduate</div>
+                    <div class="cert-issuer">AWS Academy Cloud Developing</div>
+                    <div class="cert-date">Aug 2025</div>
+                </div>
+            </div>
+            
+            <div class="cert-card">
+                <div class="cert-logo">
+                    <img src="images/oracle.png" alt="Oracle">
+                </div>
+                <div class="cert-content">
+                    <div class="cert-name">Oracle Certified Associate Java Programmer</div>
+                    <div class="cert-issuer">Oracle</div>
+                    <div class="cert-date">Dec 2022</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    
+    <section id="github" class="section">
+        <div class="container">
+            <h2 class="section-title">GitHub Activity</h2>
+            <div class="github-activity" id="githubActivity">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Fetching repositories...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" action="https://formspree.io/f/mblzopoq" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+ <footer>
+    <div class="container">
+        <div class="footer-content">
+            
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#hero">Home</a>
+                <a href="#education">Education and Certifications</a>
+                <a href="#job">Job</a>
+                <a href="#youtube">Resources & Ideas</a>
+                <a href="#projects">Projects</a>
+                <a href="#github">GitHub</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 East Dulwich, London, SE22 9JW, UK</p>
+                <p>📞 07578956460</p>
+                <p class="email">
+                    <span>✉️</span>
+                    <a href="mailto:chhaya.mist@gmail.com">chhaya.mist@gmail.com</a>
+                </p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Chhalma" target="_blank" aria-label="GitHub"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> 
+                                            </a>
+                    <a href="https://www.linkedin.com/in/chhalma-chhaya-0640741b/" target="_blank" aria-label="LinkedIn">
+                      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                       
+                    </a>
+                    <a href="https://x.com/Chhalma_CSE" target="_blank" aria-label="Twitter">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 Chhalma Chhaya. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
