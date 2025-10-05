@@ -335,7 +335,7 @@ a.logo {
 }
 
 /* Style for the live demo button */
-.live_demo {
+.demo-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: #4CAF50; /* button color */
@@ -346,12 +346,12 @@ a.logo {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.live_demo:hover {
+.demo-link:hover {
     background-color: #45a049; /* darker green on hover */
     transform: translateY(-2px); /* subtle lift effect */
 }
 
-.live_demo:active {
+.demo-link:active {
     transform: translateY(0); /* press effect */
 }
 
