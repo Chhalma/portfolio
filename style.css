@@ -334,6 +334,27 @@ a.logo {
     position: relative;
 }
 
+/* Style for the live demo button */
+.live_demo {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* button color */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.live_demo:hover {
+    background-color: #45a049; /* darker green on hover */
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+.live_demo:active {
+    transform: translateY(0); /* press effect */
+}
+
 /* ================== Job Experience ================== */
 
 .job-grid {
