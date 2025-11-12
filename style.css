@@ -277,17 +277,18 @@ a.logo {
 .stock-carousel {
     overflow: hidden;
     width: 100%;
+    max-width: 100%; /* 🩹 important: prevents it from stretching beyond card */
     border-radius: 8px;
     position: relative;
 }
 
-/* Track that slides */
 .carousel-track {
     display: flex;
     animation: slide 20s linear infinite;
+    width: max-content; /* ensures the flex container doesn’t stretch */
+    max-width: 100%;    /* keeps it bounded inside card */
 }
 
-/* Duplicate images for seamless loop */
 .carousel-track img {
     width: 250px;
     flex-shrink: 0;
@@ -295,7 +296,6 @@ a.logo {
     border-radius: 8px;
     object-fit: cover;
 }
-
 /* Auto-slide keyframes - adjusted for duplicate content */
 @keyframes slide {
     0% { transform: translateX(0); }
