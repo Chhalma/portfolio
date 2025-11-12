@@ -278,38 +278,58 @@ a.logo {
     overflow: hidden;
     width: 100%;
     border-radius: 8px;
+    position: relative;
 }
 
 /* Track that slides */
 .carousel-track {
     display: flex;
-    width: max-content; /* allows the track to expand horizontally */
-    animation: slide 12s linear infinite; /* auto-slide */
+    animation: slide 20s linear infinite;
 }
 
-/* Images */
+/* Duplicate images for seamless loop */
 .carousel-track img {
-    width: 250px;       /* Adjust as needed */
+    width: 250px;
+    flex-shrink: 0;
     margin-right: 10px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-/* Auto-slide keyframes */
+/* Auto-slide keyframes - adjusted for duplicate content */
 @keyframes slide {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* adjust if more/less images */
+    100% { transform: translateX(calc(-250px * 4 - 40px)); } /* width * number of images + total margins */
 }
 
-/* Responsive: stack images on small screens */
-@media (max-width: 600px) {
-    .carousel-track {
-        animation: none; /* stop auto-slide on mobile if desired */
-        flex-wrap: wrap;
+/* Pause on hover */
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+/* Responsive: adjust image size on smaller screens but keep horizontal scroll */
+@media (max-width: 768px) {
+    .carousel-track img {
+        width: 200px;
     }
+    
+    @keyframes slide {
+        100% { transform: translateX(calc(-200px * 4 - 40px)); }
+    }
+}
+
+/* Only stack vertically on very small screens and stop animation */
+@media (max-width: 480px) {
+    .carousel-track {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .carousel-track img {
         width: 100%;
-        margin-bottom: 10px;
+        max-width: 300px;
+        margin: 5px;
     }
 }
 /* Card style for both projects and YouTube videos */
