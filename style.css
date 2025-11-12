@@ -273,6 +273,25 @@ a.logo {
     margin-bottom: 60px;
     perspective: 1000px; /* keeps job-grid 3D perspective if needed */
 }
+.stock-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-behavior: smooth; /* smooth scrolling */
+  padding-bottom: 10px;
+}
+
+.stock-slider img {
+  flex: 0 0 auto;  /* keep width fixed */
+  width: 250px;    /* adjust size */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Optional: hide scrollbar */
+.stock-slider::-webkit-scrollbar {
+  display: none;
+}
 
 /* Card style for both projects and YouTube videos */
 .project-card,
