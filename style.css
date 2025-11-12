@@ -273,26 +273,45 @@ a.logo {
     margin-bottom: 60px;
     perspective: 1000px; /* keeps job-grid 3D perspective if needed */
 }
-.stock-slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  scroll-behavior: smooth; /* smooth scrolling */
-  padding-bottom: 10px;
+/* Carousel container */
+.stock-carousel {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 8px;
 }
 
-.stock-slider img {
-  flex: 0 0 auto;  /* keep width fixed */
-  width: 250px;    /* adjust size */
-  border-radius: 8px;
-  object-fit: cover;
+/* Track that slides */
+.carousel-track {
+    display: flex;
+    width: max-content; /* allows the track to expand horizontally */
+    animation: slide 12s linear infinite; /* auto-slide */
 }
 
-/* Optional: hide scrollbar */
-.stock-slider::-webkit-scrollbar {
-  display: none;
+/* Images */
+.carousel-track img {
+    width: 250px;       /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
+/* Auto-slide keyframes */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* adjust if more/less images */
+}
+
+/* Responsive: stack images on small screens */
+@media (max-width: 600px) {
+    .carousel-track {
+        animation: none; /* stop auto-slide on mobile if desired */
+        flex-wrap: wrap;
+    }
+    .carousel-track img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
 /* Card style for both projects and YouTube videos */
 .project-card,
 .youtube-card {
